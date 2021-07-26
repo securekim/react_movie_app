@@ -3,7 +3,7 @@ function Food({name, picture}){
   return (
     <div>
     <h2> I like {name} </h2>
-    <img src = {picture}></img>
+    <img alt={name} src = {picture}></img>
     </div>
   )
 }
@@ -36,12 +36,13 @@ const foodILike = [
   }
 ];
 
+
 function App() {
   return (
     <div className="App">
       <h1>Hello!!</h1>
       {foodILike.map(dish =>(
-        <Food name={dish.name} picture={dish.image} />
+        <Food key={dish.name} name={dish.name} picture={dish.image} />
       ))}
     </div>
   );

@@ -1,10 +1,16 @@
-import Potato from "./Potato"
+
+function Movie({favourite}){
+  return <h1> I like {favourite} </h1>
+}
+
 
 function App() {
   return (
     <div className="App">
       <h1>Hello!!</h1>
-      <Potato />
+      <Movie favourite="marin" views={123}/>
+      <Movie favourite="hawkeye" views={123}/>
+      <Movie favourite="cruella" views={123}/>
     </div>
   );
 }

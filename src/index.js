@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Potato from './Potato';
 
 //버전업이 되면서 여러개의 Component를 넣을 수 있게 됨 (App, Potato)
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Potato /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,1 +1,2 @@
-# react_movie_app
+# React Movie App
+
